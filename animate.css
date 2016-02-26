@@ -10,7 +10,7 @@
 
 .animated {
   -webkit-animation-duration: 5s;
-    animation-delay: .5s;
+    animation-delay: 2s;
 
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -19,7 +19,7 @@
 
 .animated1 {
   -webkit-animation-duration: 5s;
-  animation-delay: .5s;
+  animation-delay: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -27,7 +27,7 @@
 
 .animated2 {
   -webkit-animation-duration: 5s;
-  animation-delay: 1s;
+  animation-delay: 2.5s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -35,7 +35,7 @@
 
 .animated3 {
   -webkit-animation-duration: 5s;
-  animation-delay: 1.5s;
+  animation-delay: 3s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
