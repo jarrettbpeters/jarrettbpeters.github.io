@@ -11,13 +11,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	margin-top: -40px;
+	margin-top: -10px;
 	background-attachment: fixed;
 	background-position: center, -238px;
 }
 
 .jumbotron h1 {
-	font-family: 'Raleway','Helvetica', sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
 	position: absolute;
 	top: 18;
 	left: 10;
@@ -33,61 +33,64 @@ body {
 
 .mission {
 
+	font-family: 'Julius Sans One', sans-serif;
 	background-color: black;
 	color: #F7FAFE;
 	margin-top: 0px;
+	margin-bottom: 10%;
 }
-
-.mission h3 {
-	font-family: 'Muli', 'Helvetica', sans-serif;
-	padding: 5% 10%;
-	text-align: center;
-	position: center;
+.mission1{
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: .5s;
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+}
+.mission2{
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+}
+.mission3{
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1.5s;
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 /*Features Section*/
 .features {
 
+	background-image: url(http://s16.postimg.org/87epwsnnp/ceiling_2.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
 	position: center;
-	padding: 5% 0;
+	padding: 1% 0;
+	background-attachment: fixed;
+	background-size: cover;
+
 }
 
+.features h3 {
+	font-family: 'Julius Sans One', sans-serif;
+	position: center;
+	text-align: center;
+	color: white;
+	font-size: 1.7em;
+	padding-top: .1px;
+}
+
+
 .features p {
-	font-family: 'Muli', 'Helvetica', sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
 	position: center;
 	text-align: center;
 	color: white;
 	font-size: 1.2em;
-	padding-top: 10px;
 }
-
-/*footer {
-	background-color: grey;
-	position: absolute;
-	width: 100%;
-	height: auto;
-}
-
-footer ul li {
-	display: inline-block;
-	list-style: none;
-	padding: 2%;
-	float: right;
-}
-
-footer p {
-	float: left;
-	padding: 2%;
-
-
-}
-
-footer a,
-footer p {
-	font-family: 'Muli', 'Helvetica', sans-serif;
-	color: #fff;
-	vertical-align: middle;
-}*/
 
 table{
 	display: inline-block;
@@ -102,7 +105,7 @@ table{
 	max-width: 90%;
 	margin: auto;
 
-	}
-
-
 }
+
+
+
