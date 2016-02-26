@@ -42,21 +42,18 @@ body {
 .mission1{
 	animation-duration: 4s;
 	animation-timing-function: ease-in-out;
-	animation-delay: .5s;
 	color: white;
 	font-family: 'Julius Sans One', sans-serif;
 }
 .mission2{
 	animation-duration: 6s;
 	animation-timing-function: ease-in-out;
-	animation-delay: 1s;
 	color: white;
 	font-family: 'Julius Sans One', sans-serif;
 }
 .mission3{
 	animation-duration: 8s;
 	animation-timing-function: ease-in-out;
-	animation-delay: 1.5s;
 	color: white;
 	font-family: 'Julius Sans One', sans-serif;
 }
