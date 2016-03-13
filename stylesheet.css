@@ -4,10 +4,16 @@ body {
 	background-color: black;
 }
 
-@-ms-viewport{
-    width: extend-to-zoom;
-    zoom: 1.0;
+.modal-body {
+
+	background-image: url("https://scontent-atl3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/63346_4024764977196_876321576_n.jpg?oh=d0d406f32a4a440e40b6e0d5c579c8fa&oe=57592274");
+	background-repeat: no-repeat;
+	padding-left: 270px;
+	background-size: 260px;
+	background-position: left;
 }
+
+
 
 /*Jumbotron / Header */
 .jumbotron {
