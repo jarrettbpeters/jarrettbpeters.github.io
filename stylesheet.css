@@ -114,11 +114,12 @@ table{
 	padding-top: 550px;
 }
 
-.footer{
-	background: black;
+footer{
+	background-color: rgba(000, 000, 000, 000);
 	min-height: 150px;
 	color: white;
 	text-align: center;
+	padding-bottom: 0;
 }
 
 @media screen and (max-width: 776px) {
