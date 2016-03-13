@@ -112,9 +112,14 @@ table{
 	border: black;
 	border: 0px;
 	padding-top: 550px;
-	padding-bottom: 30px;
 }
 
+.footer{
+	background: black;
+	min-height: 150px;
+	color: white;
+	text-align: center;
+}
 
 @media screen and (max-width: 776px) {
 	.features img{
