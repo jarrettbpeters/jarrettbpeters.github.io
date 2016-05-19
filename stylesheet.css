@@ -73,10 +73,30 @@ body {
 	font-family: 'Julius Sans One', sans-serif;
 }
 
+.breaker {
+
+	font-family: 'Julius Sans One', sans-serif;
+	background-color: black;
+	color: #F7FAFE;
+	margin-top: 0px;
+}
+
 /*Features Section*/
 .features {
 
 	background-image: url(http://s16.postimg.org/87epwsnnp/ceiling_2.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	position: center;
+	padding: 1% 0;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.features2 {
+
+	background-image: url(http://s32.postimg.org/xlsi5pkzp/2012_11_05_08_50_25_302_1.jpg);
 	background-repeat: no-repeat;
 	width: 100%;
 	position: center;
@@ -105,6 +125,25 @@ body {
 	font-size: 1.2em;
 }
 
+.features2 h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	position: center;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	padding-top: .1px;
+	padding-bottom: 25px;
+}
+
+
+.features2 p {
+	font-family: 'Julius Sans One', sans-serif;
+	position: center;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+}
+
 table{
 	display: inline-block;
 	background-color: rgba(000, 000, 000, 000);
@@ -118,7 +157,7 @@ footer{
 	min-height: 150px;
 	color: white;
 	text-align: center;
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 
 @media screen and (max-width: 776px) {
