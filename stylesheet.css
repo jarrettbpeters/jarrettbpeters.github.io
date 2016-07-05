@@ -79,6 +79,7 @@ body {
 	background-color: black;
 	color: #F7FAFE;
 	margin-top: 0px;
+	width: 100%;
 }
 
 /*Features Section*/
@@ -105,6 +106,8 @@ body {
 	background-size: cover;
 
 }
+
+
 
 .features h1 {
 	font-family: 'Julius Sans One', sans-serif;
