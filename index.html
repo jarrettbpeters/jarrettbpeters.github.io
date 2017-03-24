@@ -4,12 +4,12 @@
 		<meta charset="UTF-8">
 		<title>jarrettbpeters</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="stylesheet.css">
 		<link rel="stylesheet" href="animate.css">
-		<link rel="shortcut icon" href="https://secure.gravatar.com/avatar/22ef9468e8d981d70ab09d4a3bd4ca1e" />
-		<link rel="icon" href="https://secure.gravatar.com/avatar/22ef9468e8d981d70ab09d4a3bd4ca1e" />
+		<link rel="shortcut icon" href="http://i66.tinypic.com/wi7xpk.jpg" />
+		<link rel="icon" href="http://i66.tinypic.com/wi7xpk.jpg" />
 		<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -31,6 +31,39 @@
 		});
 		</script>
 	</head>
+<style>
+body {
+background-color:#FFFFFF;
+color:#000000;
+font-family:Arial;
+font-size:11pt;
+letter-spacing:1;
+}
+.thumbnail {
+border:1px solid #000000;
+}
+.thumbSelected {
+border:1px solid #000000;
+}
+</style>
+
+<script language=javascript>
+var lastID = 0;
+function SelectImg(id) {
+if (lastID > 0) {
+document.getElementById(lastID).className = "thumbnail";
+}
+document.getElementById(id).className = "thumbSelected";
+document.getElementById(0).src = document.getElementById(id).src;
+lastID = id;
+}
+function LoadTrigger() {
+SelectImg(1);
+}
+window.onload = LoadTrigger;
+</script>
+
+	</head>
 
 <body data-spy="scroll" data-target=".navbar">
 	<div id=".navbar">
@@ -50,205 +83,310 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      	<li><a href="#home">jbp</a></li>
-      	<li><a href="#codes">codes</a></li>
+      	<li><a href="#myCarousel">JBP</a></li>
       	<li><a href="#cuts">cuts</a></li>
-      	<li><a href="#social">social</a></li>
+      	<li><a href="#snaps">snaps</a></li>
+      	<li><a href="#about">about</a></li>
+      	<li><a href="#follow">social</a></li>
+
       </ul>
      <ul class="nav navbar-nav navbar-right">
 <div class="container-fluid contact">
 
-<button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">
-<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+CONTACT<button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></button>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModallabel">Contact Information</h4>
-      </div>
-      <div class="modal-body">
-        <p>615-533-5333</p>
-        <p>jarrettbpeters@gmail.com</p>
-        <p>5587 Boy Scout Rd</p>
-        <p>Franklin, TN 37064</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModallabel">Contact Information</h4>
+      </div>
+      <div class="modal-body">
+        <p>615-533-5333</p>
+        <p>2532 N Fourth St #254</p>
+        <p>Flagstaff, AZ 86004</p>
+        <p>jarrettbpeters@gmail.com</p>
+        <table border="0px">
+	<thead>
+		<tr>
+			<th colspan="5"></th>
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+					</tr>
+	</thead>
+	<div id="contact">
+		<tr>
+			<td>
+				<a href="https://www.facebook.com/jarrettbpeters" target="blank"><img src="https://s4.postimg.org/7u0tqewx9/facebook_flat_vector_logo_400x400.png" width="50" height="50"alt="Facebook logo"></a>
+			<td>
+				<a href="https://www.instagram.com/jarrettbpeters/" target="blank"><img src="http://s10.postimg.org/o81pijorp/instagram_icon_vector_logo.png" width="50" height="50"alt="Instagram logo"></a>
+			<td>
+				<a href="https://www.youtube.com/jarrettbpeters" target="blank"><img src="https://s31.postimg.org/q1zvncdyz/Youtube_Logo.png" width="50" height="50"LT="GitHub Logo"></a>
+			
+			
+        </tr>
+    </div>
+	</table> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 
 </div>
 </ul>
 		
-      </ul>
 
       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
+<!-- 
 <div class="jumbotron" id="home">
-	<h1 class="animated fadeIn">jarrett b peters</h1>
+</div> -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://i63.tinypic.com/2hp4oe9.jpg">
+    </div>
+
+    <div class="item">
+      <img src="http://i64.tinypic.com/2v29usp.jpg">
+    </div>
+
+    <div class="item">
+      <img src="http://i66.tinypic.com/70dzfc.jpg">
+    </div>
+
+    <div class="item">
+      <img src="http://i63.tinypic.com/34h6uyh.jpg">
+    </div>
+
+    <div class="item">
+      <img src="http://i64.tinypic.com/2ui7ul5.jpg">
+    </div>
+  </div>
 </div>
+  <!-- Left and right controls -->
+<!--    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> --> 
+</div>
+
 
 <div class="container-fluid mission1">
 	<div class="row">
-		<h5 class="animated1 fadeIn"><center>simple.<br>
+		<h1 class="animated1 fadeIn"><center>Jarrett Peters<br>
+		
+	</div>
+</div>
+
+
+<div class="container-fluid mission2">
+	<div class="row">
+		<h3 class="animated2 fadeIn"><center>Video Editor<br>
 	</div>
 </div>
 	
-<div class="container-fluid mission2">
-	<div class="row">
-		<h5 class="animated2 fadeIn"><center>efficient.<br>
-	</div>
-</div>
 <div class="container-fluid mission3">
 	<div class="row">
-		<h5 class="animated3 fadeIn"><center>effective.<br>
-			<br>
-			<br>
+		<h3 class="animated3 fadeIn"><center>Photographer<br>
+	</div>
+</div>
+<div class="container-fluid mission4">
+	<div class="row">
+		<h3 class="animated4 fadeIn"><center>Web Designer<br><br>
+		
 	</div>
 </div>
 
 
-			<div id="codes">
+
+
+
 				<br>
 <div class="container features">
-	<div class="row">
-		<div class="col-sm-12">
-			<b><h1>codes</h1></b>
+	<h5>“People are capable,<br> at any time in their lives,<br> of doing what they dream of."<br>-Paulo Coelho</h5>
+<!-- 		<h1><center>CUTS</h1>
+ --><!-- 		<center><img src="http://i67.tinypic.com/2r6h4ro.jpg" border="0" alt="The Satchmo's Crew" class="img-rounded"></center>
+		<h5><center><b>The concept of Satchmo's goes as far back as we can remember. Family, friends and great food are ideals that we were raised with.<br> Hailing from the Midwest, fresh foods and top-quality barbecue were mainstays. With the bayou just to the south, Cajun & Creole foods commonly found their way into family gatherings & backyard get-togethers.<br> After moving to Flagstaff, we quickly realized we found a place to call home permanently. The next step was making our dream a reality.<br> After a short stint catering out of a rent-by-the hour commercial kitchen, Satchmo's landed in an old 300-square-foot block building, offering only drive-thru and carry-out service. Another year passed and a second and final move has put us where we now have a dining room, outdoor patio and liquor license.<br>
+		We don't just want our customers to like our food; we want them to LOVE it! We've always felt that if we can just get people to try our food they will come back for more. <br>Flagstaff's definitely a word-of-mouth town and with our "homemade" and "good for your soul" approach to food, we just had a good feeling that word would travel. <br>We live, work and eat in Flagstaff, appreciate this community, and we hope that shows in everything we do!
+		<br>It's easy for us to tell you how good for your soul our food is, but why not ask your friends?<center><table border="0px">
+	<thead>
+		<tr>
+			<th colspan="5"></th>
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+					</tr>
+	</thead>
+		<tr>
+			<td>
+				<a href="https://www.yelp.com/biz/satchmos-flagstaff" target="blank"><img src="http://i68.tinypic.com/w15t6q.png" width="50" height="50"alt="Yelp logo"></a>
+			<td>
+				<a href="https://www.google.com/search?q=Satchmo%27s&ludocid=3267337027518518852#lrd=0x0:0x2d57e9b726b8d644,1" target="blank"><img src="http://i63.tinypic.com/2is73uo.png" width="50" height="50"alt="Google Logo"></a>
+			<td>
+				<a href="https://www.tripadvisor.com/Restaurant_Review-g60971-d1943232-Reviews-Satchmo_s_BBQ-Flagstaff_Arizona.html" target="blank"><img src="http://i66.tinypic.com/2upwl14.png" width="50" height="50"alt="TripAdvisor logo"></a>
+			<td>
+
 			
-			<a href="https://github.com/jarrettbpeters/jarrettbpeters.github.io" target="blank"><p>This one</p>
-				<center><img class="img-circle" src="http://s29.postimg.org/6y1wgc207/Screen_Shot_2016_02_26_at_3_05_17_PM.png" width="240" height="240"></center>
-				<br>
-				<p>A simple portfolio page to introduce myself and hopefully make a good impression. </p></a>
-		</div>
-		<div class="col-sm-12">
-			<br>
-			<br>
-			<br>
-			<br>
-			<a href="https://github.com/jarrettbpeters/Old-profile-page.git" target="blank"><p>The old version of this one</p>
-			<center><img class="img-circle" src="http://s29.postimg.org/57iveukh3/Screen_Shot_2016_02_26_at_3_06_32_PM.png" width="240" height="240"></center>
-			<br>
-			<p>Clunky and ugly if you ask me, but a pretty good first try.</p></a>
-		</div>
-		<br>
-		<br>
-		<div class="col-sm-12">
-			<br>
-			<br>
-			<br>
-			<br>
-			<a href="https://github.com/jarrettbpeters/its-good-coffee.git" target="blank"><p>The inspiration for both of them</p>
-			<center><img class="img-circle" src="http://s29.postimg.org/ynyhh9quf/Screen_Shot_2016_02_26_at_3_06_54_PM.png" width="240" height="240"></center>
-			<br>
-			<p>A class project.</p></a>
-		</div>
-		<br>
-		<br>		
-		<div class="col-sm-12">
-			<br>
-			<br>
-			<br>
-			<br>
-			<a href="https://github.com/jarrettbpeters/" target="blank"><p>The rest</p>
-			<center><img class="img-circle" src="http://s29.postimg.org/vq1inkj6v/Screen_Shot_2016_02_26_at_3_08_01_PM.png" width="240" height="240"></center>
-			<br>
-			<p>My main GitHub page. Hopefully an ever-growing list of projects, both failed and successful.</p></a>
-		<br>
-		<br>
-		<br>
-		</div>
-	</div>
+			
+        </tr>
+    </div>
+	</table></center> </h3></b></center><br></h5></b>
+	
+	<center><h1>COME GET SOME</h1><iframe
+  	width="600"
+  	height="450"
+  	frameborder="0" style="border:0"
+  	src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBcPXd09yZg1GRHLk5uyjs1dCg3iPo7SzU
+    &q=Satchmo's, Flagstaff, AZ" allowfullscreen>
+</iframe></center>
+<br>
+
+
+
+
+
+	</div> -->
+
+
+
+
+
 </div>
 <div class="container breaker">
-	<br>
-	<br>
-	<h5><center>“People are capable, at any time in their lives, of doing what they dream of." </h5>
-	<h6><center>-Paulo Coelho</h5>
-	<br>
-	<br>
+	<h1><center>CUTS</h1>
 </div>
 			<div id="cuts">
 				
 <div class="container features2">
-	<div class="row">
-		<div class="col-sm-12">
-			<br>
-				<b><h1>cuts</h1></b>
+<!-- 	    <h1><center>CUTS</h1>	
+ -->	<!--     <center><img src="http://i66.tinypic.com/oizp.jpg"</center><br><br><br> -->
+		<div class="row">
 
-			<p>Demo Reel</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/e9Z1GLNPORk" frameborder="0" allowfullscreen></iframe></center>
-			<p>Basically just a video resume. An easy way to show perspective employers what you're capable of.<br>
-				All video &copy The NewsChannel 5 Network</p></a>
-			<br>
-			<br>
-			<br>
-			<br>
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/P_r96ixBesE" frameborder="0" allowfullscreen></iframe><p>SCCA OPEN PAW TRAINING</p></center>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/5ENXVOYKnTQ" frameborder="0" allowfullscreen></iframe><p>TEPA COMES TO ASU</p></center>
 		</div>
-		<div class="col-sm-12">
-			<p>Candice & Trae</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-hZ0YMKQ8p4" frameborder="0" allowfullscreen></iframe></center>
-			<p>Congrats to Candice & Trae! A beautiful wedding deserves a beautiful wedding video and I was happy to oblige!<br>
-				All music &copy Chris Stapleton</p>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-			<div class="col-sm-12">
-			<p>The Danberrys - Receive</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/I4UnRS7Yn3Y" frameborder="0" allowfullscreen></iframe></center>
-			<p>A single-cam two-take live performance shoot to promote the latest CD from The Danberrys.<br>
-				All music &copy The Danberrys</p>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		<div class="col-sm-12">
-			<p>The Danberrys - Rain</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/xsmjje5-ud0" frameborder="0" allowfullscreen></iframe></center>
-			<p>More fun from The Danberrys.<br>
-				All music &copy The Danberrys</p>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		<div class="col-sm-12">
-			<p>The Wedding Video</p>
-			<center><iframe width="400" height="315" src="https://www.youtube.com/embed/9q14sfoQBFo" frameborder="0" allowfullscreen></iframe></center>
-			<p>I took a 47 minute VHS copy of my wedding and made it into a 7 minute music video.<br> Because who wants to watch a 47 minute wedding video?<br>
-				All music &copy Dave Matthews Band</p>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		<div class="col-sm-12">
-			<p>Closing Credits Roll</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/VUqNWmXr2zA" frameborder="0" allowfullscreen></iframe></center>
-			<p>Tasked with creating a closing credit roll, this one was both fun to do and fun to watch.<br>
-				All video &copy The NewsChannel 5 Network<br>
-				Graphic credit: Terrance Boyce</p>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		<div class="col-sm-12">
-			<p>The Silly-versary</p>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/_QIQicT8h-0" frameborder="0" allowfullscreen></iframe></center>
-			<p>One very boring day at work I decided to edit a video celebrating 17 years of "Relationship Status: In a relationship."<br>
-			This is what I ended up with<br>
-			All music &copy Dave Matthews Band</p>
-		</div>
-		</div>
+
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/XMOMS8AByXY" frameborder="0" allowfullscreen></iframe><p>FFFC FOOD TO FARM</p></center>
+			</div>
+
+<!-- 		<div class="row">
+ -->
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/XjP-aBuEmi8" frameborder="0" allowfullscreen></iframe><p>MMG PROMO VIDEO</p></center>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/Ebj5tnwOVHk" frameborder="0" allowfullscreen></iframe><p>SCCA THANK YOU</p><center>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/NIqGK3ruwBo" frameborder="0" allowfullscreen></iframe><p>MRB 5TH ANNIVERSARY</center>
+			</div>
+
+						<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/VcIkIul8KM0" frameborder="0" allowfullscreen></iframe><p>NAU THANK YOU</p></center>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/s2Hp-ysH18I" frameborder="0" allowfullscreen></iframe><p>FFFC HOT MEALS</p><center>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+				
+				<center><iframe width="350" height="196" src="https://www.youtube.com/embed/-hZ0YMKQ8p4" frameborder="0" allowfullscreen></iframe><p>CANDICE & TRAE</center>
+			</div>
+
+	</div>
+</div>
+
+<div class="container breaker2">
+	<h1><center>"Not all those who wander are lost."</h1><br><center><h5>-JRR Tolkien</center></h5>
+ </div>
 	
+<div id="snaps">
+	<div class="container catering">
+		<h1><center>SNAPS</h1>
+
+
+<center>
+<h5>Click on a thumbnail to view it full size.</h5>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top">
+<img id=1 class="thumbnail" src="http://i68.tinypic.com/15i2tq8.jpg" width=140 onclick="SelectImg(1)">
+<img id=2 class="thumbnail" src="http://i66.tinypic.com/keu36d.jpg" width=140 onclick="SelectImg(2)">
+<img id=3 class="thumbnail" src="http://i65.tinypic.com/2chx1c.jpg" width=140 onclick="SelectImg(3)">
+<img id=4 class="thumbnail" src="http://i64.tinypic.com/do8kqt.jpg" width=140 onclick="SelectImg(4)">
+<img id=5 class="thumbnail" src="http://i65.tinypic.com/xd002.jpg" width=140 onclick="SelectImg(5)">
+<img id=6 class="thumbnail" src="http://i64.tinypic.com/29n9c36.jpg" width=140 onclick="SelectImg(6)">
+<img id=7 class="thumbnail" src="http://i65.tinypic.com/2je5lhj.jpg" width=140 onclick="SelectImg(7)">
+<img id=8 class="thumbnail" src="http://i66.tinypic.com/33upy6v.jpg" width=140 onclick="SelectImg(8)">
+</td>
+<td width="10">
+</td>
+<td align="center" valign="top">
+<img id=0 src="">
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="conainer features3">
+
+	</div>
+<div id="about">
+	<div class="container about">
+<h1><center>ABOUT ME!</center></h1>
+<body>
+<img src="http://i65.tinypic.com/29fvvwl.jpg" style="float:left;" class="img-circle" height="375" width="500"/>
+<h4 style="float:right;"><br>After nearly 15 years of the grueling local news grind,<br> my wife and I decided it was time for a change.<br> So we sold our house and most of our stuff and moved to<br> Asheville, North Carolina for a computer coding boot-camp.<br>After seven long months of searching across the country<br>for coding work, we finally decided to branch out on our own<br>and try to make a go of it. Now we find ourselves in<br>Flagstaff, Arizona.<br><br>I bring with me my fast, efficient, and effective video editing<br>skills; my raw, untrained, but impressive photography skills;<br>and my elegant, affordable, but powerful web design skills.<br><br>My wife and I have absoltely fallen in love with FLG<br>and we hope to make our permanent home here. Let us <br>help you make this town as awesome as we all know it can be!</h4>
+</body>	
+
+
+	</div>
+
+<div class="container breaker3">
+	
+</div>	
 
 
 <center><table border="0px">
@@ -260,27 +398,23 @@
 			<th></th>
 			<th></th>
 			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
+					</tr>
 	</thead>
-	<div id="social">
+	<div id="follow">
 		<tr>
 			<td>
-				<a href="https://www.youtube.com/jarrettbpeters" target="blank"><img src="https://s31.postimg.org/q1zvncdyz/Youtube_Logo.png" width="75" height="75"alt="Facebook logo"></a>
+				<a href="https://www.facebook.com/SatchmosBBQ/" target="blank"><img src="https://s4.postimg.org/7u0tqewx9/facebook_flat_vector_logo_400x400.png" width="50" height="50"alt="Facebook logo"></a>
 			<td>
-				<a href="https://www.instagram.com/jarrettbpeters/" target="blank"><img src="http://s10.postimg.org/o81pijorp/instagram_icon_vector_logo.png" width="75" height="75"alt="Instagram logo"></a>
+				<a href="https://www.instagram.com/satchmosbbq/?hl=en" target="blank"><img src="http://s10.postimg.org/o81pijorp/instagram_icon_vector_logo.png" width="50" height="50"alt="Instagram logo"></a>
 			<td>
-				<a href="https://github.com/jarrettbpeters" target="blank"><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" width="75" height="75"LT="GitHub Logo"></a>
+				<a href="https://twitter.com/SatchmosBBQ?lang=en" target="blank"><img src="http://s29.postimg.org/6qsd43qyb/twitter_bird_icon_logo_B5634_C6_F6_A_seeklogo_com.png" width="50" height="50"alt="Twitter Logo"></a>
 			
-			<td>
-				<a href="https://twitter.com/jarrettpeters" target="blank"><img src="http://s29.postimg.org/6qsd43qyb/twitter_bird_icon_logo_B5634_C6_F6_A_seeklogo_com.png" width="75" height="75"alt="Twitter logo"></a>
-			<td>
-				<a href="https://www.linkedin.com/in/jarrett-peters-250a8848?trk=nav_responsive_tab_profile"target="blank"><img src="http://s2.postimg.org/nttpw12hx/linkedin_icon_logo_vector_400x400.png"width="75" height="75" alt="Linked In logo"></a>
+			
         </tr>
     </div>
 	</table></center>  
-				
+						<footer>&copy; 2017 happymouse productions<br><a href="#myCarousel">Back to top</footer>
+
 
 		</div>
 	</div>
@@ -291,18 +425,10 @@
 
 </ul>
 </div>
-<div class="footer">
-	<div class="container">
-		<footer>&copy; 2016 Jarrett B Peters<br><a href="#home">Back to top</footer>
-	</div>
-</div>
+
 
 	<script src="profile.js"></script>
 </div>
 
 </body>
 </html>
-
-
-
-
