@@ -1,12 +1,12 @@
 $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
+  $('#myInput').focus()
 })
-   $(function () {
-        $('#closemodal').click(function () {
-            $('#mymodal').modal('hide');
-        });
+   $(function () {
+        $('#closemodal').click(function () {
+            $('#mymodal').modal('hide');
+        });
 
-    });
+    });
 
 $('body').scrollspy({ target: '#navbar' })
 $('[data-spy="scroll"]').each(function) (){
