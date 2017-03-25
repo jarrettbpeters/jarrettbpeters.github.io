@@ -307,7 +307,7 @@ html {
 .catering {
 	position: center;
 /*	padding: 5% 0;
-*/	background-color: lightgrey;
+*/	background-image; url("http://i63.tinypic.com/a2fxo4.jpg")
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 1280px;
